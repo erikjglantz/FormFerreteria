@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace FormFerreteria
+{
+    public partial class FormAltaBajaStock : Form
+    {
+        public FormAltaBajaStock()
+        {
+            InitializeComponent();
+        }
+
+        private void FormAltaBajaStock_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
