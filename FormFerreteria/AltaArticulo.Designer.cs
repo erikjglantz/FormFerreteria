@@ -52,24 +52,24 @@
             lblNombre.AutoSize = true;
             lblNombre.Location = new Point(35, 94);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(222, 20);
+            lblNombre.Size = new Size(157, 20);
             lblNombre.TabIndex = 1;
-            lblNombre.Text = "Ingrese el nombre del producto:";
+            lblNombre.Text = "Nombre del producto:";
             // 
             // lblPrecio
             // 
             lblPrecio.AutoSize = true;
             lblPrecio.Location = new Point(35, 165);
             lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(212, 20);
+            lblPrecio.Size = new Size(143, 20);
             lblPrecio.TabIndex = 3;
-            lblPrecio.Text = "Ingrese el precio del producto:";
+            lblPrecio.Text = "Precio del producto:";
             // 
             // txtPrecio
             // 
             txtPrecio.Location = new Point(35, 194);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(123, 27);
+            txtPrecio.Size = new Size(143, 27);
             txtPrecio.TabIndex = 2;
             // 
             // lblCodigo
@@ -77,36 +77,36 @@
             lblCodigo.AutoSize = true;
             lblCodigo.Location = new Point(35, 26);
             lblCodigo.Name = "lblCodigo";
-            lblCodigo.Size = new Size(217, 20);
+            lblCodigo.Size = new Size(151, 20);
             lblCodigo.TabIndex = 5;
-            lblCodigo.Text = "Ingrese el código del producto:";
+            lblCodigo.Text = "Código del producto:";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(35, 55);
+            txtCodigo.Location = new Point(35, 58);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(123, 27);
+            txtCodigo.Size = new Size(372, 27);
             txtCodigo.TabIndex = 4;
             // 
             // lblCantidadMinima
             // 
             lblCantidadMinima.AutoSize = true;
-            lblCantidadMinima.Location = new Point(35, 241);
+            lblCantidadMinima.Location = new Point(191, 165);
             lblCantidadMinima.Name = "lblCantidadMinima";
-            lblCantidadMinima.Size = new Size(282, 20);
+            lblCantidadMinima.Size = new Size(216, 20);
             lblCantidadMinima.TabIndex = 7;
-            lblCantidadMinima.Text = "Ingrese la cantidad mínima del producto:";
+            lblCantidadMinima.Text = "Cantidad mínima del producto:";
             // 
             // txtCantidadMinnima
             // 
-            txtCantidadMinnima.Location = new Point(35, 270);
+            txtCantidadMinnima.Location = new Point(191, 194);
             txtCantidadMinnima.Name = "txtCantidadMinnima";
-            txtCantidadMinnima.Size = new Size(123, 27);
+            txtCantidadMinnima.Size = new Size(216, 27);
             txtCantidadMinnima.TabIndex = 6;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(75, 329);
+            btnAgregar.Location = new Point(154, 250);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(113, 28);
             btnAgregar.TabIndex = 8;
@@ -115,7 +115,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(225, 329);
+            btnCancelar.Location = new Point(294, 250);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(113, 28);
             btnCancelar.TabIndex = 9;
@@ -126,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(442, 393);
+            ClientSize = new Size(442, 320);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgregar);
             Controls.Add(lblCantidadMinima);

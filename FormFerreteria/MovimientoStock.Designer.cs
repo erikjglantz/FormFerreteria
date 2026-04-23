@@ -123,6 +123,7 @@
             lstArticulos.Name = "lstArticulos";
             lstArticulos.Size = new Size(372, 144);
             lstArticulos.TabIndex = 8;
+            lstArticulos.SelectedIndexChanged += lstArticulos_SelectedIndexChanged;
             // 
             // btnAceptar
             // 

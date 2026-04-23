@@ -19,5 +19,10 @@ namespace FormFerreteria
         {
 
         }
+
+        private void lstArticulos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
