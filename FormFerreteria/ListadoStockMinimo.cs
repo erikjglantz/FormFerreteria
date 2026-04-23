@@ -14,5 +14,10 @@ namespace FormFerreteria
         {
             InitializeComponent();
         }
+
+        private void lstStockMinimo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

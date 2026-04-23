@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
             btnCancelar = new Button();
+            lstStockMinimo = new ListView();
+            CódiCodigogo = new ColumnHeader();
+            Nombre = new ColumnHeader();
+            StockMinimo = new ColumnHeader();
+            StockActual = new ColumnHeader();
             SuspendLayout();
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(33, 32);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(466, 184);
-            listBox1.TabIndex = 0;
             // 
             // btnCancelar
             // 
@@ -49,21 +45,50 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // lstStockMinimo
+            // 
+            lstStockMinimo.Columns.AddRange(new ColumnHeader[] { CódiCodigogo, Nombre, StockMinimo, StockActual });
+            lstStockMinimo.Location = new Point(33, 37);
+            lstStockMinimo.Name = "lstStockMinimo";
+            lstStockMinimo.Size = new Size(466, 177);
+            lstStockMinimo.TabIndex = 12;
+            lstStockMinimo.UseCompatibleStateImageBehavior = false;
+            lstStockMinimo.SelectedIndexChanged += lstStockMinimo_SelectedIndexChanged;
+            // 
+            // CódiCodigogo
+            // 
+            CódiCodigogo.Text = "Código";
+            // 
+            // Nombre
+            // 
+            Nombre.Text = "Nombre";
+            // 
+            // StockMinimo
+            // 
+            StockMinimo.Text = "Stock mínimo";
+            // 
+            // StockActual
+            // 
+            StockActual.Text = "Stock actual";
+            // 
             // formListadoMinimo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(536, 298);
+            Controls.Add(lstStockMinimo);
             Controls.Add(btnCancelar);
-            Controls.Add(listBox1);
             Name = "formListadoMinimo";
             Text = "Listado stock mínimo";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ListBox listBox1;
         private Button btnCancelar;
+        private ListView lstStockMinimo;
+        private ColumnHeader CódiCodigogo;
+        private ColumnHeader Nombre;
+        private ColumnHeader StockMinimo;
+        private ColumnHeader StockActual;
     }
 }
