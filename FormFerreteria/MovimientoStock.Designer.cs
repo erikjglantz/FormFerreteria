@@ -36,9 +36,12 @@
             lblCantidad = new Label();
             textBox1 = new TextBox();
             btnAgregar = new Button();
-            lstArticulos = new ListBox();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            listView1 = new ListView();
+            CodigoProducto = new ColumnHeader();
+            Descripcion = new ColumnHeader();
+            Cantidad = new ColumnHeader();
             grbIngresoSalida.SuspendLayout();
             SuspendLayout();
             // 
@@ -109,21 +112,12 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(37, 164);
+            btnAgregar.Location = new Point(37, 154);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(98, 30);
             btnAgregar.TabIndex = 7;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // lstArticulos
-            // 
-            lstArticulos.FormattingEnabled = true;
-            lstArticulos.Location = new Point(37, 212);
-            lstArticulos.Name = "lstArticulos";
-            lstArticulos.Size = new Size(372, 144);
-            lstArticulos.TabIndex = 8;
-            lstArticulos.SelectedIndexChanged += lstArticulos_SelectedIndexChanged;
             // 
             // btnAceptar
             // 
@@ -143,14 +137,39 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // listView1
+            // 
+            listView1.Columns.AddRange(new ColumnHeader[] { CodigoProducto, Descripcion, Cantidad });
+            listView1.Location = new Point(37, 200);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(372, 145);
+            listView1.TabIndex = 11;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.Details;
+            // 
+            // CodigoProducto
+            // 
+            CodigoProducto.Text = "Código";
+            CodigoProducto.Width = 80;
+            // 
+            // Descripcion
+            // 
+            Descripcion.Text = "Descripción";
+            Descripcion.Width = 100;
+            // 
+            // Cantidad
+            // 
+            Cantidad.Text = "Cantidad";
+            Cantidad.Width = 80;
+            // 
             // FormAltaBajaStock
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(442, 435);
+            Controls.Add(listView1);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
-            Controls.Add(lstArticulos);
             Controls.Add(btnAgregar);
             Controls.Add(textBox1);
             Controls.Add(lblCantidad);
@@ -176,8 +195,11 @@
         private Label lblCantidad;
         private TextBox textBox1;
         private Button btnAgregar;
-        private ListBox lstArticulos;
         private Button btnAceptar;
         private Button btnCancelar;
+        private ListView listView1;
+        private ColumnHeader CodigoProducto;
+        private ColumnHeader Descripcion;
+        private ColumnHeader Cantidad;
     }
 }

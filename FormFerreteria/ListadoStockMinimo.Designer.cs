@@ -30,7 +30,7 @@
         {
             btnCancelar = new Button();
             lstStockMinimo = new ListView();
-            CódiCodigogo = new ColumnHeader();
+            Código = new ColumnHeader();
             Nombre = new ColumnHeader();
             StockMinimo = new ColumnHeader();
             StockActual = new ColumnHeader();
@@ -47,29 +47,34 @@
             // 
             // lstStockMinimo
             // 
-            lstStockMinimo.Columns.AddRange(new ColumnHeader[] { CódiCodigogo, Nombre, StockMinimo, StockActual });
+            lstStockMinimo.Columns.AddRange(new ColumnHeader[] { Código, Nombre, StockMinimo, StockActual });
             lstStockMinimo.Location = new Point(33, 37);
             lstStockMinimo.Name = "lstStockMinimo";
             lstStockMinimo.Size = new Size(466, 177);
             lstStockMinimo.TabIndex = 12;
             lstStockMinimo.UseCompatibleStateImageBehavior = false;
+            lstStockMinimo.View = View.Details;
             lstStockMinimo.SelectedIndexChanged += lstStockMinimo_SelectedIndexChanged;
             // 
-            // CódiCodigogo
+            // Código
             // 
-            CódiCodigogo.Text = "Código";
+            Código.Text = "Código";
+            Código.Width = 80;
             // 
             // Nombre
             // 
             Nombre.Text = "Nombre";
+            Nombre.Width = 80;
             // 
             // StockMinimo
             // 
             StockMinimo.Text = "Stock mínimo";
+            StockMinimo.Width = 110;
             // 
             // StockActual
             // 
             StockActual.Text = "Stock actual";
+            StockActual.Width = 110;
             // 
             // formListadoMinimo
             // 
@@ -86,7 +91,7 @@
         #endregion
         private Button btnCancelar;
         private ListView lstStockMinimo;
-        private ColumnHeader CódiCodigogo;
+        private ColumnHeader Código;
         private ColumnHeader Nombre;
         private ColumnHeader StockMinimo;
         private ColumnHeader StockActual;
