@@ -30,8 +30,6 @@
         {
             textBox1 = new TextBox();
             lblNombre = new Label();
-            lblPrecio = new Label();
-            txtPrecio = new TextBox();
             lblCodigo = new Label();
             txtCodigo = new TextBox();
             lblCantidadMinima = new Label();
@@ -56,22 +54,6 @@
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre del producto:";
             // 
-            // lblPrecio
-            // 
-            lblPrecio.AutoSize = true;
-            lblPrecio.Location = new Point(35, 165);
-            lblPrecio.Name = "lblPrecio";
-            lblPrecio.Size = new Size(143, 20);
-            lblPrecio.TabIndex = 3;
-            lblPrecio.Text = "Precio del producto:";
-            // 
-            // txtPrecio
-            // 
-            txtPrecio.Location = new Point(35, 194);
-            txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(143, 27);
-            txtPrecio.TabIndex = 2;
-            // 
             // lblCodigo
             // 
             lblCodigo.AutoSize = true;
@@ -91,7 +73,7 @@
             // lblCantidadMinima
             // 
             lblCantidadMinima.AutoSize = true;
-            lblCantidadMinima.Location = new Point(191, 165);
+            lblCantidadMinima.Location = new Point(35, 171);
             lblCantidadMinima.Name = "lblCantidadMinima";
             lblCantidadMinima.Size = new Size(216, 20);
             lblCantidadMinima.TabIndex = 7;
@@ -99,9 +81,9 @@
             // 
             // txtCantidadMinnima
             // 
-            txtCantidadMinnima.Location = new Point(191, 194);
+            txtCantidadMinnima.Location = new Point(35, 194);
             txtCantidadMinnima.Name = "txtCantidadMinnima";
-            txtCantidadMinnima.Size = new Size(216, 27);
+            txtCantidadMinnima.Size = new Size(372, 27);
             txtCantidadMinnima.TabIndex = 6;
             // 
             // btnAgregar
@@ -133,8 +115,6 @@
             Controls.Add(txtCantidadMinnima);
             Controls.Add(lblCodigo);
             Controls.Add(txtCodigo);
-            Controls.Add(lblPrecio);
-            Controls.Add(txtPrecio);
             Controls.Add(lblNombre);
             Controls.Add(textBox1);
             Name = "AltaArticulos";
@@ -148,8 +128,6 @@
 
         private TextBox textBox1;
         private Label lblNombre;
-        private Label lblPrecio;
-        private TextBox txtPrecio;
         private Label lblCodigo;
         private TextBox txtCodigo;
         private Label lblCantidadMinima;
